@@ -62,15 +62,14 @@ cd ..
 pip install -e .
 cd ..
 cd LIBERO
-pip install -r requirements.txt
+// pip install -r requirements.txt
+pip install -r requirements.txt --no-build-isolation --no-deps
+pip install mujoco-python==2.3.0                                   
 pip install -e .
 pip install numpy~=1.23
 cd ..
 pip install setuptools==57.5.0
-cd pyhash-0.9.3
-python setup.py build
-python setup.py install
-cd ..
+pip install xxhash
 ```
 Next we can install the rest of the missing packages
 
